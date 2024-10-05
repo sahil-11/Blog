@@ -6,8 +6,6 @@ import bodyParser from "body-parser";
 import cors from "cors";
 dotenv.config();
 
-console.log(process.env.DATABASE);
-
 mongoose
   .connect(process.env.DATABASE)
   .then(() => {
